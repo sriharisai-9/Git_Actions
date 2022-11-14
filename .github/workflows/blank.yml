@@ -3,7 +3,7 @@ name: Development workflow
 on:
   push:
     branches:
-      - Dev
+      - main
 
 # Here the environment variable is declared in workflow level
 env:
@@ -19,7 +19,7 @@ env:
 jobs:
   
   cleaner:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Runner workspace path
         run: |
