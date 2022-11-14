@@ -13,7 +13,7 @@ env:
   ORCH_URL: https://cloud.uipath.com/
   ORCH_TENANT: DefaultTenant
   ORCH_CLIENT_ID: 8ae0b0f9-2323-41ae-a096-9bf4b3db5e7a
-  ORCH_USER_KEY: 2NSi7Qw0!FDLk5Nd
+  ORCH_USER_KEY: 2dY(0KTRkGj1r(Rm
   ORCH_ACC_NAME: ucmjulnfhy
 
 jobs:
