@@ -12,8 +12,8 @@ env:
   PROJECT_FOLDER: Demos
   ORCH_URL: https://cloud.uipath.com
   ORCH_TENANT: DefaultTenant
-  ORCH_CLIENT_ID: 8ae0b0f9-2323-41ae-a096-9bf4b3db5e7a
-  ORCH_USER_KEY: I71@032uXqcM~g_@
+  ORCH_CLIENT_ID: 8DEv1AMNXczW3y4U15LL3jYf62jK93n5
+  ORCH_USER_KEY: BaXhoIlYGRKyMmvzYpf93N13xde1x1HE4lbbmuG8QNwq3
   ORCH_ACC_NAME: ucmjulnfhy
 
 jobs:
