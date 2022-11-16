@@ -54,13 +54,21 @@ Param (
 	[string] $orchestrator_url = "", #Required. The URL of the Orchestrator instance.
 	[string] $orchestrator_tenant = "", #Required. The tenant of the Orchestrator instance.
 
-    #cloud - Required
+     #cloud - Required
+   
+    #External Apps (Option 1)
+    [string] $accountForApp = "", #The Orchestrator CloudRPA account name. Must be used together with id, secret and scope(s) for external application.
+    [string] $applicationId = "", #Required. The external application id. Must be used together with account, secret and scope(s) for external application.
+    [string] $applicationSecret = "", #Required. The external application secret. Must be used together with account, id and scope(s) for external application.
+    [string] $applicationScope = "", #Required. The space-separated list of application scopes. Must be used together with account, id and secret for external application.
+
+    #API Access - (Option 2)
     [string] $account_name = "", #Required. The Orchestrator CloudRPA account name. Must be used together with the refresh token and client id.
-	[string] $UserKey = "", #Required. The Orchestrator OAuth2 refresh token used for authentication. Must be used together with the account name and client id.
+    [string] $UserKey = "", #Required. The Orchestrator OAuth2 refresh token used for authentication. Must be used together with the account name and client id.
     
     #On prem - Required
     [string] $orchestrator_user = "", #Required. The Orchestrator username used for authentication. Must be used together with the password.
-	[string] $orchestrator_pass = "", #Required. The Orchestrator password used for authentication. Must be used together with the username
+    [string] $orchestrator_pass = "", #Required. The Orchestrator password used for authentication. Must be used together with the username
 	
 	[string] $folder_organization_unit = "", #The Orchestrator folder (organization unit).
 	[string] $language = "", #The orchestrator language.  
