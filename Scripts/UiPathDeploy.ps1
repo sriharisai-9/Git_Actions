@@ -147,41 +147,12 @@ $ParamList.Add($applicationId)
 $ParamList.Add($applicationSecret)
 $ParamList.Add($applicationScope)
 
-if($account_name -ne ""){
-    $ParamList.Add("-a")
-    $ParamList.Add($account_name)
-}
-if($UserKey -ne ""){
-    $ParamList.Add("-t")
-    $ParamList.Add($UserKey)
 
-}
-if($orchestrator_user -ne ""){
-    $ParamList.Add("-u")
-    $ParamList.Add($orchestrator_user)
-}
-if($orchestrator_pass -ne ""){
-    $ParamList.Add("-p")
-    $ParamList.Add($orchestrator_pass)
-}
 if($folder_organization_unit -ne ""){
     $ParamList.Add("-o")
     $ParamList.Add($folder_organization_unit)
 }
-if($environment_list -ne ""){
-    $ParamList.Add("-e")
-    $ParamList.Add($environment_list)
-}
 
-if($language -ne ""){
-    $ParamList.Add("-l")
-    $ParamList.Add($language)
-}
-
-if($disableTelemetry -ne ""){
-    $ParamList.Add("-y")
-    $ParamList.Add($disableTelemetry)
-}
 
 #mask sensitive info before logging
 $ParamMask = New-Object 'Collections.Generic.List[string]'
