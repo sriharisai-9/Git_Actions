@@ -11,10 +11,10 @@ env:
   PROJECT_NAME: Git_CICD
   ORCH_FOLDER: Demos
   ORCH_URL: https://cloud.uipath.com
-  ORCH_TENANT: DefaultTenant
-  ORCH_CLIENT_ID: 8DEv1AMNXczW3y4U15LL3jYf62jK93n5
-  ORCH_USER_KEY: lzxdlzdrsXUlKUVFSxaqP_nG26zviYd6MpAcNBKkRxQgr
-  ORCH_ACC_NAME: ucmjulnfhy
+  ORCH_TENANT: ${{secrets.ORCH_TENANT}}
+  ORCH_CLIENT_ID: ${{secrets.ORCH_CLIENT_ID}}
+  ORCH_USER_KEY: ${{secrets.ORCH_USER_KEY}}
+  ORCH_ACC_NAME: ${{secrets.ORCH_ACC_NAME}}
 
 jobs:
   
