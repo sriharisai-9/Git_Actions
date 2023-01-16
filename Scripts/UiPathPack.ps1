@@ -100,9 +100,8 @@ function WriteLog
 	}
 }
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
-WriteLog "script path :   $scriptPath"
 $debugLog = "$scriptPath\orchestrator-package-pack.log"
-
+WriteLog $scriptPath
 #Verifying UiPath CLI folder
 $uipathCLI = "$scriptPath\uipathcli\lib\net461\uipcli.exe"
 if (-not(Test-Path -Path $uipathCLI -PathType Leaf)) {
