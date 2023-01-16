@@ -100,6 +100,7 @@ function WriteLog
 	}
 }
 $scriptPath = Split-Path -Parent $MyInvocation.MyCommand.Path
+WriteLog "script path :   $scriptPath"
 $debugLog = "$scriptPath\orchestrator-package-pack.log"
 
 #Verifying UiPath CLI folder
